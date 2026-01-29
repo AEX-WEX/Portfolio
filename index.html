@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Senior Creative Frontend Engineer & AI Systems Builder - Portfolio">
+    <title>System Engineer | Frontend × AI × Infrastructure</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursorFollower"></div>
+
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-content">
+            <div class="preloader-text">
+                <span class="char">L</span>
+                <span class="char">O</span>
+                <span class="char">A</span>
+                <span class="char">D</span>
+                <span class="char">I</span>
+                <span class="char">N</span>
+                <span class="char">G</span>
+            </div>
+            <div class="preloader-bar">
+                <div class="preloader-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Transition -->
+    <div class="page-transition">
+        <div class="transition-layer"></div>
+        <div class="transition-layer"></div>
+        <div class="transition-layer"></div>
+        <div class="transition-layer"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-text">A.K.C</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#work" class="nav-link">Work</a></li>
+                <li><a href="#experience" class="nav-link">Capabilities</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-links">
+            <a href="#about" class="mobile-link" data-text="About">About</a>
+            <a href="#work" class="mobile-link" data-text="Work">Work</a>
+            <a href="#experience" class="mobile-link" data-text="Capabilities">Capabilities</a>
+            <a href="#contact" class="mobile-link" data-text="Contact">Contact</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-background">
+            <div class="hero-bg-layer" data-speed="0.3"></div>
+            <div class="hero-bg-layer" data-speed="0.5"></div>
+            <div class="hero-bg-layer" data-speed="0.7"></div>
+        </div>
+
+        <div class="container">
+            <div class="hero-content">
+                <span class="hero-label">Senior Frontend Engineer × AI Systems</span>
+
+                <h1 class="hero-title">
+                    <span class="line">
+                        <span class="word">Building</span>
+                        <span class="word">production</span>
+                        <span class="word">systems</span>
+                    </span>
+                    <span class="line">
+                        <span class="word">at</span>
+                        <span class="word">the</span>
+                        <span class="word">intersection</span>
+                        <span class="word">of</span>
+                    </span>
+                    <span class="line">
+                        <span class="word">web</span>
+                        <span class="word">interfaces,</span>
+                        <span class="word">AI</span>
+                        <span class="word">agents,</span>
+                    </span>
+                    <span class="line">
+                        <span class="word">and</span>
+                        <span class="word">performant</span>
+                        <span class="word">architecture</span>
+                    </span>
+                </h1>
+
+                <div class="hero-subtitle-wrapper">
+                    <p class="hero-subtitle">
+                        I architect real-time interfaces, orchestrate multi-agent systems, and craft award-winning animations. From GSAP-powered experiences to MCP servers, I build systems that scale and interfaces that feel inevitable.
+                    </p>
+                </div>
+
+                <div class="hero-buttons">
+                    <a href="#work" class="btn-primary magnetic">
+                        <span class="btn-text">View Work</span>
+                        <span class="btn-hover"></span>
+                    </a>
+                    <a href="#experience" class="btn-secondary magnetic">
+                        <span class="btn-text">Explore Systems</span>
+                        <span class="btn-hover"></span>
+                    </a>
+                    <a href="#contact" class="btn-secondary magnetic">
+                        <span class="btn-text">Get in Touch</span>
+                        <span class="btn-hover"></span>
+                    </a>
+                </div>
+
+                <div class="hero-scroll-indicator hero-scroll-indicator-left">
+                    <svg class="scroll-chevron" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <svg class="scroll-chevron scroll-chevron-2" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <svg class="scroll-chevron scroll-chevron-3" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+
+                <div class="hero-scroll-indicator hero-scroll-indicator-right">
+                    <svg class="scroll-chevron" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <svg class="scroll-chevron scroll-chevron-2" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <svg class="scroll-chevron scroll-chevron-3" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="2">0</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="6">0</div>
+                    <div class="stat-label">Systems Built</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="4">0</div>
+                    <div class="stat-label">AI Agents Deployed</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="99">0</div>
+                    <div class="stat-label">Lighthouse Score</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">About</span>
+                <h2 class="section-title split-lines">
+                    <span class="line">
+                        <span class="word">Engineer</span>
+                        <span class="word">+</span>
+                        <span class="word">Creative</span>
+                    </span>
+                </h2>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-content">
+                    <div class="about-text reveal-text">
+                        <p class="large-text">
+                            I build systems where engineering rigor meets creative craft. My work spans frontend interfaces with cinematic animations, AI agent orchestration, and production infrastructure that scales.
+                        </p>
+                    </div>
+
+                    <div class="about-text reveal-text">
+                        <p>
+                            On the frontend, I architect performant interfaces using React, TypeScript, and GSAP. I've built award-winning sites with 60fps animations and real-time dashboards handling 50,000+ events per second. Performance isn't just metrics — it's about perceived speed and intentional motion.
+                        </p>
+                    </div>
+
+                    <div class="about-text reveal-text">
+                        <p>
+                            On the systems side, I design AI agent workflows using LangChain and build MCP servers that expose custom tools to LLMs. I think in terms of orchestration patterns, state management, and graceful degradation. The hard problems are always about coordination, not just computation.
+                        </p>
+                    </div>
+
+                    <div class="about-text reveal-text">
+                        <p>
+                            I also experiment with Blender for 3D work, generative systems, and visual explorations. The best work happens at the intersection of disciplines — where code feels like craft and systems feel like art.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="about-sidebar">
+                    <div class="about-image-wrapper">
+                        <div class="about-image-reveal"></div>
+                        <div class="about-image" style="background-image: url('assests/images/MAIN_PIC.png'); background-size: cover; background-position: center;"></div>
+                    </div>
+
+                    <div class="about-meta-list">
+                        <div class="about-meta">
+                            <span class="meta-label">Currently</span>
+                            <span class="meta-value">Building production AI systems & creative web experiences</span>
+                        </div>
+
+                        <div class="about-meta">
+                            <span class="meta-label">Location</span>
+                            <span class="meta-value">Mumbai, India</span>
+                        </div>
+
+                        <div class="about-meta">
+                            <span class="meta-label">Email</span>
+                            <a href="mailto:hello@system.engineer" class="meta-link">hello@system.engineer</a>
+                        </div>
+
+                        <div class="about-meta">
+                            <span class="meta-label">GitHub</span>
+                            <a href="https://github.com/engineer" target="_blank" class="meta-link">github.com/engineer</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marquee Section -->
+    <section class="marquee-section">
+        <div class="marquee">
+            <div class="marquee-content">
+                <span>React</span>
+                <span class="marquee-dot">●</span>
+                <span>TypeScript</span>
+                <span class="marquee-dot">●</span>
+                <span>GSAP</span>
+                <span class="marquee-dot">●</span>
+                <span>Python</span>
+                <span class="marquee-dot">●</span>
+                <span>LangChain</span>
+                <span class="marquee-dot">●</span>
+                <span>Node.js</span>
+                <span class="marquee-dot">●</span>
+                <span>Docker</span>
+                <span class="marquee-dot">●</span>
+                <span>Canvas API</span>
+                <span class="marquee-dot">●</span>
+                <span>WebGL</span>
+                <span class="marquee-dot">●</span>
+                <span>Redis</span>
+                <span class="marquee-dot">●</span>
+            </div>
+            <div class="marquee-content" aria-hidden="true">
+                <span>React</span>
+                <span class="marquee-dot">●</span>
+                <span>TypeScript</span>
+                <span class="marquee-dot">●</span>
+                <span>GSAP</span>
+                <span class="marquee-dot">●</span>
+                <span>Python</span>
+                <span class="marquee-dot">●</span>
+                <span>LangChain</span>
+                <span class="marquee-dot">●</span>
+                <span>Node.js</span>
+                <span class="marquee-dot">●</span>
+                <span>Docker</span>
+                <span class="marquee-dot">●</span>
+                <span>Canvas API</span>
+                <span class="marquee-dot">●</span>
+                <span>WebGL</span>
+                <span class="marquee-dot">●</span>
+                <span>Redis</span>
+                <span class="marquee-dot">●</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section class="work" id="work">
+        <div class="container-large">
+            <div class="section-header">
+                <span class="section-label">Selected Work</span>
+                <h2 class="section-title split-lines">
+                    <span class="line">
+                        <span class="word">Production</span>
+                        <span class="word">Systems</span>
+                    </span>
+                </h2>
+            </div>
+
+            <div class="work-list">
+                <!-- Project 1 -->
+                <article class="work-item" data-work="1">
+                    <div class="work-number">01</div>
+
+                    <div class="work-content">
+                        <div class="work-header">
+                            <h3 class="work-title">Agentic Workflow Orchestration Platform</h3>
+                            <span class="work-year">2025</span>
+                        </div>
+
+                        <div class="work-details">
+                            <p class="work-description">
+                                Built multi-agent system for enterprise workflow automation. Architected orchestration layer with state persistence, graceful degradation when agents disagree, and dynamic tool routing via MCP servers. The challenge was handling partial failures — when one agent in a 5-agent chain fails, the system redistributes work instead of restarting. Reduced manual processing time by 87%.
+                            </p>
+
+                            <div class="work-tags">
+                                <span class="tag">LangChain</span>
+                                <span class="tag">Python</span>
+                                <span class="tag">Redis</span>
+                                <span class="tag">MCP</span>
+                                <span class="tag">FastAPI</span>
+                            </div>
+
+                            <a href="#" class="work-link magnetic">
+                                <span>View case study</span>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="work-image-wrapper">
+                        <div class="work-image-reveal"></div>
+                        <div class="work-image" style="background: linear-gradient(135deg, #ff3b3b 0%, #c41e1e 100%);"></div>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="work-item" data-work="2">
+                    <div class="work-number">02</div>
+
+                    <div class="work-content">
+                        <div class="work-header">
+                            <h3 class="work-title">Real-Time Analytics Dashboard</h3>
+                            <span class="work-year">2024</span>
+                        </div>
+
+                        <div class="work-details">
+                            <p class="work-description">
+                                Designed interface for visualizing 50,000+ events per second from distributed systems. Used Canvas instead of SVG for chart rendering — 10x performance improvement. Implemented virtual scrolling for event logs and optimistic UI updates. The hard part was maintaining sub-100ms perceived latency while data streamed in. Users feel like the dashboard is instant, even though it's processing TB of data.
+                            </p>
+
+                            <div class="work-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">TypeScript</span>
+                                <span class="tag">Canvas API</span>
+                                <span class="tag">WebSockets</span>
+                                <span class="tag">Node.js</span>
+                            </div>
+
+                            <a href="#" class="work-link magnetic">
+                                <span>View case study</span>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="work-image-wrapper">
+                        <div class="work-image-reveal"></div>
+                        <div class="work-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="work-item" data-work="3">
+                    <div class="work-number">03</div>
+
+                    <div class="work-content">
+                        <div class="work-header">
+                            <h3 class="work-title">GSAP-Powered Agency Website</h3>
+                            <span class="work-year">2024</span>
+                        </div>
+
+                        <div class="work-details">
+                            <p class="work-description">
+                                Created award-winning portfolio site with cinematic scroll animations. Every section has intentional motion — parallax, reveals, magnetic cursors. Maintained 60fps on all interactions through GPU-accelerated transforms and requestAnimationFrame optimization. Won Awwwards Site of the Day. The trick was restraint: animations enhance content, never distract from it.
+                            </p>
+
+                            <div class="work-tags">
+                                <span class="tag">Vanilla JS</span>
+                                <span class="tag">GSAP</span>
+                                <span class="tag">ScrollTrigger</span>
+                                <span class="tag">CSS Grid</span>
+                                <span class="tag">WebGL</span>
+                            </div>
+
+                            <a href="#" class="work-link magnetic">
+                                <span>View case study</span>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="work-image-wrapper">
+                        <div class="work-image-reveal"></div>
+                        <div class="work-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                    </div>
+                </article>
+
+                <!-- Project 4 -->
+                <article class="work-item" data-work="4">
+                    <div class="work-number">04</div>
+
+                    <div class="work-content">
+                        <div class="work-header">
+                            <h3 class="work-title">MCP Server for Document Intelligence</h3>
+                            <span class="work-year">2025</span>
+                        </div>
+
+                        <div class="work-details">
+                            <p class="work-description">
+                                Built MCP protocol server exposing document analysis tools to LLM agents. Supports OCR, semantic chunking, entity extraction, and table parsing. Designed streaming responses for large PDFs (500+ pages). The interesting challenge was tool discovery — agents dynamically learn capabilities instead of having them hardcoded. Integrated with Claude Desktop and custom agent frameworks.
+                            </p>
+
+                            <div class="work-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">FastAPI</span>
+                                <span class="tag">MCP Protocol</span>
+                                <span class="tag">OCR</span>
+                                <span class="tag">LangChain</span>
+                            </div>
+
+                            <a href="#" class="work-link magnetic">
+                                <span>View case study</span>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="work-image-wrapper">
+                        <div class="work-image-reveal"></div>
+                        <div class="work-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                    </div>
+                </article>
+
+                <!-- Project 5 -->
+                <article class="work-item" data-work="5">
+                    <div class="work-number">05</div>
+
+                    <div class="work-content">
+                        <div class="work-header">
+                            <h3 class="work-title">E-Commerce Platform Migration</h3>
+                            <span class="work-year">2023</span>
+                        </div>
+
+                        <div class="work-details">
+                            <p class="work-description">
+                                Migrated legacy monolith to micro-frontend architecture. Implemented module federation for independent deployments and incremental adoption. Reduced bundle size by 60% through code splitting and tree shaking. Zero downtime migration using feature flags. The hardest part was shared state management across 8 independent frontend apps — solved with event bus pattern and local storage sync.
+                            </p>
+
+                            <div class="work-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">TypeScript</span>
+                                <span class="tag">Webpack 5</span>
+                                <span class="tag">GraphQL</span>
+                                <span class="tag">Docker</span>
+                            </div>
+
+                            <a href="#" class="work-link magnetic">
+                                <span>View case study</span>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="work-image-wrapper">
+                        <div class="work-image-reveal"></div>
+                        <div class="work-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);"></div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience/Capabilities Section -->
+    <section class="experience" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Capabilities</span>
+                <h2 class="section-title split-lines">
+                    <span class="line">
+                        <span class="word">How</span>
+                        <span class="word">I</span>
+                        <span class="word">Think</span>
+                    </span>
+                </h2>
+            </div>
+
+            <div class="experience-wrapper">
+                <div class="experience-grid">
+                    <div class="experience-column">
+                        <h3 class="subsection-title">Approach</h3>
+
+                        <div class="timeline-list">
+                            <div class="timeline-item">
+                                <span class="timeline-period">Philosophy 01</span>
+                                <h4 class="timeline-role">Systems Thinking</h4>
+                                <p class="timeline-description">
+                                    Code should feel inevitable. I design systems where components compose naturally, state flows predictably, and errors are handled gracefully. The best architectures disappear — they just work.
+                                </p>
+                            </div>
+
+                            <div class="timeline-item">
+                                <span class="timeline-period">Philosophy 02</span>
+                                <h4 class="timeline-role">Performance vs. Experience</h4>
+                                <p class="timeline-description">
+                                    Real performance is perceived speed. A 200ms operation that feels instant beats a 100ms operation that feels janky. I optimize for human perception, not just Lighthouse scores.
+                                </p>
+                            </div>
+
+                            <div class="timeline-item">
+                                <span class="timeline-period">Philosophy 03</span>
+                                <h4 class="timeline-role">Engineering + Design</h4>
+                                <p class="timeline-description">
+                                    My best work happens at the intersection. Understanding visual hierarchy makes me write better components. Understanding technical constraints makes better design decisions.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="experience-column">
+                        <h3 class="subsection-title">Technical Capabilities</h3>
+
+                        <div class="skills-list">
+                            <div class="skill-category">
+                                <h4 class="skill-category-title">Frontend Systems</h4>
+                                <ul class="skill-items">
+                                    <li>React, TypeScript, Next.js for production apps</li>
+                                    <li>State management (Zustand, Redux, Context)</li>
+                                    <li>Performance optimization (code splitting, lazy loading)</li>
+                                    <li>Build tools (Webpack, Vite, esbuild)</li>
+                                </ul>
+                            </div>
+
+                            <div class="skill-category">
+                                <h4 class="skill-category-title">Animation & Interaction</h4>
+                                <ul class="skill-items">
+                                    <li>GSAP, ScrollTrigger, motion design principles</li>
+                                    <li>Canvas API, WebGL for high-performance graphics</li>
+                                    <li>CSS animations, transitions, transforms</li>
+                                    <li>Micro-interactions, magnetic effects, parallax</li>
+                                </ul>
+                            </div>
+
+                            <div class="skill-category">
+                                <h4 class="skill-category-title">AI / ML Engineering</h4>
+                                <ul class="skill-items">
+                                    <li>Agent orchestration (LangChain, AutoGPT patterns)</li>
+                                    <li>MCP server development, tool creation</li>
+                                    <li>RAG systems, embeddings, vector databases</li>
+                                    <li>Prompt engineering, chain-of-thought reasoning</li>
+                                </ul>
+                            </div>
+
+                            <div class="skill-category">
+                                <h4 class="skill-category-title">Backend / Infrastructure</h4>
+                                <ul class="skill-items">
+                                    <li>Node.js, Python, FastAPI for services</li>
+                                    <li>Docker, Kubernetes, CI/CD pipelines</li>
+                                    <li>WebSockets, real-time systems, Redis</li>
+                                    <li>GraphQL, REST APIs, database design</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Get in Touch</span>
+                <h2 class="section-title split-lines">
+                    <span class="line">
+                        <span class="word">Let's</span>
+                        <span class="word">Build</span>
+                    </span>
+                </h2>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-text reveal-text">
+                        <p class="large-text">
+                            I'm open to collaborating on production systems, AI agent projects, and creative web experiences.
+                        </p>
+
+                        <p>
+                            Whether you need a real-time interface, multi-agent orchestration, or award-worthy animations, let's talk about what we can build together. I prefer async communication but make time for the right projects.
+                        </p>
+                    </div>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="contact-label">Email</span>
+                            <a href="mailto:hello@system.engineer" class="contact-link magnetic">hello@system.engineer</a>
+                        </div>
+
+                        <div class="contact-item">
+                            <span class="contact-label">GitHub</span>
+                            <a href="https://github.com/engineer" target="_blank" class="contact-link magnetic">github.com/engineer</a>
+                        </div>
+
+                        <div class="contact-item">
+                            <span class="contact-label">Twitter</span>
+                            <a href="https://twitter.com/system_engineer" target="_blank" class="contact-link magnetic">@system_engineer</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" id="name" name="name" class="form-input" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" name="email" class="form-input" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" name="message" class="form-textarea" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-primary magnetic">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-hover"></span>
+                        </button>
+
+                        <p class="form-message" id="formMessage"></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <p class="footer-copyright">© 2026 System Engineer. Built with intention.</p>
+                </div>
+
+                <div class="footer-right">
+                    <nav class="footer-links">
+                        <a href="https://github.com/engineer" target="_blank" class="footer-link magnetic">GitHub</a>
+                        <a href="https://twitter.com/system_engineer" target="_blank" class="footer-link magnetic">Twitter</a>
+                        <a href="https://linkedin.com/in/engineer" target="_blank" class="footer-link magnetic">LinkedIn</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- GSAP Core -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <!-- ScrollTrigger Plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <!-- ScrollToPlugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+    <!-- Flip Plugin (Free) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Flip.min.js"></script>
+    <!-- Text Plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"></script>
+
+    <!-- Custom Script -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
